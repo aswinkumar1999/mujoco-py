@@ -1,6 +1,7 @@
 
 ### Docker documentation : 
 
+0. Go to NGC and Generate your own API key to use the NGC service through the Docker client. - https://ngc.nvidia.com/setup
 1. Git Pull - `git clone https://github.com/aswinkumar1999/mujoco-py.git` 
 2. cd to dir `cd mujoco_py`
 3. Docker build - `docker build -t mujoco_py:latest .`
