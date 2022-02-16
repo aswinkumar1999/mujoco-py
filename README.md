@@ -1,3 +1,22 @@
+
+### Docker documentation : 
+
+1. Git Pull - `git clone https://github.com/aswinkumar1999/mujoco-py.git` 
+2. cd to dir `cd mujoco_py`
+3. Docker build - `docker build -t mujoco_py:latest .`
+4. Docker run with GUI - 
+
+
+
+```bash
+xhost + 
+docker run -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY mujoco_py:latest
+```
+
+NOTE : `xhost` is for Linux , use this for Mac : https://cntnr.io/running-guis-with-docker-on-mac-os-x-a14df6a76efc
+
+***
+
 **Status:** Maintenance (expect bug fixes and minor updates)
 
 # mujoco-py [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://openai.github.io/mujoco-py/build/html/index.html) [![Build Status](https://travis-ci.org/openai/mujoco-py.svg?branch=master)](https://travis-ci.org/openai/mujoco-py)
